@@ -95,6 +95,12 @@ rm -rf /home/user/android-sdk
 android sdk install "system-images;android-35;google_apis;x86_64"
 ```
 
+- example remove sdk
+
+```sh
+android sdk remove "system-images;android-35;google_apis;x86_64"
+```
+
 - list profiles
 
 ```sh
