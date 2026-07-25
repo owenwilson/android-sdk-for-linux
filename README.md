@@ -95,6 +95,53 @@ rm -rf /home/user/android-sdk
 android sdk install "system-images;android-35;google_apis;x86_64"
 ```
 
+- list profiles
+
+```sh
+android emulator create --list-profiles
+```
+
+- output list profiles
+
+```sh
+large_desktop
+medium_desktop
+medium_phone
+medium_tablet
+small_desktop
+small_phone
+```
+
+- create android profile emulator
+
+```sh
+android emulator create small_phone
+small_phone
+```
+
+- start android emulator
+
+```sh
+android emluator start small_phone
+```
+
+- output
+
+```sh
+Emulator process 56346 started, log file location: '/home/user/.android/small_phone/emulator.log'
+Waiting for virtual device 'small_phone' to fully start (269 seconds left)
+Virtual device successfully started as 'emulator-5554'
+```
+
+![android emulator small phone](./images/img-android-emulator-small_phone.png)
+
+- stop android emulator
+
+```sh
+android emulator stop emulator-5554
+Waiting for virtual device 'emulator-5554' to fully terminate (55 seconds left)
+```
+
 ## references
 
 - please check out [developer android studio](https://developer.android.com/studio)
