@@ -87,9 +87,9 @@ source ~/.bashrc
 rm -rf /home/user/android-sdk
 ```
 
-## run adv android
+## run emulator android
 
-- example download system image
+- example download system image (optional)
 
 ```sh
 android sdk install "system-images;android-35;google_apis;x86_64"
@@ -140,6 +140,18 @@ Virtual device successfully started as 'emulator-5554'
 ```
 
 ![android emulator small phone](./images/img-android-emulator-small_phone.png)
+
+- install android-tools
+
+```sh
+sudo dnf install -y android-tools
+```
+
+- verify devices
+
+```sh
+adb devices
+```
 
 - stop android emulator
 
